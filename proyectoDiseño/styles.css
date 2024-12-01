@@ -1,0 +1,163 @@
+/* styles.css */
+
+/* General */
+:root {
+    --primary-color: #27509B;
+
+    --font-family: Noto Sans, extendes, sans-serif;
+
+    --text-color: #000000;
+
+    --background-color: #ffffff;
+
+    --border-color: #ececec;
+
+    --button-color: #fce500;
+
+    --button-hover-color: #fce500;
+
+    --link-color: #000000;
+
+    --link-hover-color: #fce500;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ececec;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+header svg {
+    fill: #000000;
+    cursor: pointer;
+}
+
+/* Botón Dimensión/Vehículo */
+.dimension-section {
+    background-color: #27509B;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.dimension-section button {
+    background-color: #fce500;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dimension-section button:hover {
+    background-color: #fce500;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.carousel-indicators .indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-indicators .indicator.active {
+    background-color: #fce500;
+}
+
+/* Redes Sociales */
+section h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section .social-links {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+section .social-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section .social-links a:hover {
+    color: #fce500;
+}
+
+footer {
+    background-color: #27509B;
+    padding: 20px;
+    text-align: center;
+}
+    
+footer p {
+    color: #ffffff;
+    font-size: 14px;    
+}
+
+footer a {
+    color: #ffffff;    
+}
